@@ -3,11 +3,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 ```
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <meta name="description"
-      content="Pratik Dangi - Senior Full-Stack Developer specializing in WordPress, WooCommerce, PHP, Headless CMS, Contentful and Next.js.">
+      content="Pratik Dangi — Senior Full-Stack Developer specializing in WordPress, WooCommerce, PHP, Headless CMS, Contentful, Next.js and MERN.">
 
 <meta name="author" content="Pratik Dangi">
 
@@ -15,37 +16,48 @@
 
 <link rel="stylesheet" href="style.css">
 
+<!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet">
 ```
 
 </head>
 
 <body>
 
-<!-- ================= NAVIGATION ================= -->
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
 
-<header class="header">
-    <div class="container nav">
+<header class="site-header">
 
 ```
+<div class="container nav">
+
     <a href="#home" class="logo">
-        PD<span>.</span>
+        <span>PD</span><b>.</b>
     </a>
 
-    <nav>
+    <nav class="desktop-nav">
+
         <a href="#about">About</a>
-        <a href="#services">Expertise</a>
+
+        <a href="#expertise">Expertise</a>
+
         <a href="#projects">Projects</a>
+
         <a href="#experience">Experience</a>
+
         <a href="#skills">Skills</a>
+
         <a href="#contact">Contact</a>
+
     </nav>
 
-    <a href="#contact" class="nav-button">
+    <a href="#contact" class="nav-cta">
         Let's Talk
     </a>
 
@@ -54,63 +66,101 @@
 
 </header>
 
-<!-- ================= HERO ================= -->
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<main>
 
 <section id="home" class="hero">
 
 ```
-<div class="container hero-grid">
+<div class="hero-grid container">
+
+
+    <!-- LEFT -->
 
     <div class="hero-content">
 
-        <div class="availability">
-            <span></span>
-            Available for opportunities
+        <div class="status">
+
+            <span class="status-dot"></span>
+
+            <span>Senior Full-Stack Developer</span>
+
         </div>
 
-        <p class="eyebrow">
-            SENIOR FULL-STACK DEVELOPER
+
+        <p class="hero-kicker">
+            WORDPRESS · PHP · HEADLESS CMS
         </p>
+
 
         <h1>
-            Building scalable
-            <span>digital experiences.</span>
+
+            I build
+            <span>scalable</span>
+            digital experiences.
+
         </h1>
 
-        <p class="hero-text">
-            9+ years of experience designing, building and deploying
-            enterprise web applications across WordPress, PHP,
-            WooCommerce and modern headless architectures.
+
+        <p class="hero-description">
+
+            Senior Full-Stack Developer with 9+ years of experience
+            designing, building and deploying enterprise web
+            applications across WordPress, PHP, WooCommerce and
+            modern headless architectures.
+
         </p>
 
-        <div class="hero-buttons">
 
-            <a href="#projects" class="button primary">
-                View My Work
-                <span>→</span>
+        <div class="hero-actions">
+
+            <a href="#projects" class="btn btn-primary">
+
+                View Projects
+
+                <span>↗</span>
+
             </a>
 
-            <a href="#contact" class="button secondary">
-                Contact Me
+
+            <a href="#contact" class="btn btn-outline">
+
+                Get In Touch
+
             </a>
 
         </div>
 
-        <div class="hero-tech">
+
+        <div class="hero-stats">
 
             <div>
+
                 <strong>9+</strong>
+
                 <span>Years Experience</span>
+
             </div>
 
-            <div>
-                <strong>20+</strong>
-                <span>Technologies</span>
-            </div>
 
             <div>
+
                 <strong>3+</strong>
+
                 <span>Developers Led</span>
+
+            </div>
+
+
+            <div>
+
+                <strong>Full</strong>
+
+                <span>Stack Delivery</span>
+
             </div>
 
         </div>
@@ -118,81 +168,141 @@
     </div>
 
 
-    <div class="hero-card">
 
-        <div class="code-window">
+    <!-- RIGHT / CODE CARD -->
 
-            <div class="window-top">
-                <div class="dots">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+    <div class="hero-visual">
+
+        <div class="code-card">
+
+
+            <div class="code-header">
+
+                <div class="window-buttons">
+
+                    <i></i>
+                    <i></i>
+                    <i></i>
+
                 </div>
 
-                <span>developer.js</span>
+                <span>pratik.js</span>
+
             </div>
 
-            <div class="code">
+
+            <div class="code-body">
 
                 <p>
-                    <span class="purple">const</span>
-                    <span class="blue">developer</span> =
+                    <em>const</em>
+                    developer = {
                 </p>
+
 
                 <p class="indent">
-                    {
-                </p>
 
-                <p class="indent-2">
                     name:
-                    <span class="green">'Pratik Dangi'</span>,
+                    <strong>"Pratik Dangi"</strong>,
+
                 </p>
 
-                <p class="indent-2">
-                    role:
-                    <span class="green">'Senior Full-Stack Developer'</span>,
-                </p>
-
-                <p class="indent-2">
-                    experience:
-                    <span class="orange">'9+ years'</span>,
-                </p>
-
-                <p class="indent-2">
-                    expertise: [
-                </p>
-
-                <p class="indent-3">
-                    <span class="green">'WordPress'</span>,
-                </p>
-
-                <p class="indent-3">
-                    <span class="green">'WooCommerce'</span>,
-                </p>
-
-                <p class="indent-3">
-                    <span class="green">'PHP'</span>,
-                </p>
-
-                <p class="indent-3">
-                    <span class="green">'Next.js'</span>,
-                </p>
-
-                <p class="indent-3">
-                    <span class="green">'Contentful'</span>
-                </p>
-
-                <p class="indent-2">
-                    ]
-                </p>
 
                 <p class="indent">
-                    };
+
+                    role:
+                    <strong>"Senior Full-Stack"</strong>,
+
                 </p>
+
+
+                <p class="indent">
+
+                    experience:
+                    <strong>"9+ years"</strong>,
+
+                </p>
+
+
+                <p class="indent">
+
+                    location:
+                    <strong>"India"</strong>,
+
+                </p>
+
+
+                <p class="indent">
+
+                    stack: [
+
+                </p>
+
+
+                <p class="indent-2">
+
+                    <strong>"WordPress"</strong>,
+
+                </p>
+
+
+                <p class="indent-2">
+
+                    <strong>"WooCommerce"</strong>,
+
+                </p>
+
+
+                <p class="indent-2">
+
+                    <strong>"PHP"</strong>,
+
+                </p>
+
+
+                <p class="indent-2">
+
+                    <strong>"Next.js"</strong>,
+
+                </p>
+
+
+                <p class="indent-2">
+
+                    <strong>"MERN"</strong>
+
+                </p>
+
+
+                <p class="indent">
+
+                    ]
+
+                </p>
+
+
+                <p>};</p>
+
 
                 <p class="comment">
-                    // Turning ideas into scalable products.
+
+                    // Build. Scale. Deliver.
+
                 </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="floating-card">
+
+            <span class="pulse"></span>
+
+            <div>
+
+                <small>Currently</small>
+
+                <strong>Building scalable solutions</strong>
 
             </div>
 
@@ -205,83 +315,116 @@
 
 </section>
 
-<!-- ================= ABOUT ================= -->
+<!-- =====================================================
+     ABOUT
+===================================================== -->
 
-<section id="about" class="section">
+<section id="about" class="section about">
 
 ```
 <div class="container">
 
-    <div class="section-heading">
+    <div class="section-label">
 
-        <p class="eyebrow">ABOUT ME</p>
+        <span>01</span>
 
-        <h2>
-            Engineering with
-            <span>purpose.</span>
-        </h2>
+        ABOUT ME
 
     </div>
 
 
     <div class="about-grid">
 
-        <div class="about-text">
+
+        <div>
+
+            <h2>
+                Engineering solutions
+                <span>that make an impact.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="about-copy">
 
             <p>
                 I'm <strong>Pratik Dangi</strong>, a Senior Full-Stack
-                Developer with 9+ years of experience building
-                enterprise-grade web applications and digital platforms.
+                Developer with 9+ years of experience designing,
+                building and deploying enterprise web applications.
             </p>
+
 
             <p>
                 My core expertise spans WordPress architecture,
-                custom plugin development, WooCommerce,
-                PHP, REST APIs and modern headless CMS architectures.
+                custom plugin development, WooCommerce, PHP,
+                REST APIs and modern headless CMS architectures
+                using Contentful and Next.js.
             </p>
 
-            <p>
-                I've worked across multilingual websites, custom
-                e-commerce solutions, enterprise migrations,
-                third-party integrations and full-stack applications.
-            </p>
 
             <p>
-                I enjoy solving complex technical problems,
-                improving application performance and turning
-                business requirements into scalable solutions.
+                I've worked on multilingual platforms, enterprise
+                migrations, custom e-commerce systems, third-party
+                integrations and full-stack applications.
+            </p>
+
+
+            <p>
+                I also enjoy technical leadership, performance
+                optimization, client communication and owning the
+                complete deployment lifecycle.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="principles">
+
+
+        <div class="principle">
+
+            <span>01</span>
+
+            <h3>Architecture</h3>
+
+            <p>
+                Scalable, maintainable and business-focused
+                application architecture.
             </p>
 
         </div>
 
 
-        <div class="about-highlight">
+        <div class="principle">
 
-            <div class="highlight-card">
-                <span class="number">01</span>
-                <h3>Architecture</h3>
-                <p>
-                    Designing scalable and maintainable web architectures.
-                </p>
-            </div>
+            <span>02</span>
 
-            <div class="highlight-card">
-                <span class="number">02</span>
-                <h3>Development</h3>
-                <p>
-                    Building custom WordPress, PHP and full-stack solutions.
-                </p>
-            </div>
+            <h3>Performance</h3>
 
-            <div class="highlight-card">
-                <span class="number">03</span>
-                <h3>Leadership</h3>
-                <p>
-                    Leading developers through reviews, planning and delivery.
-                </p>
-            </div>
+            <p>
+                Front-end, back-end and infrastructure optimization
+                for reliable applications.
+            </p>
 
         </div>
+
+
+        <div class="principle">
+
+            <span>03</span>
+
+            <h3>Leadership</h3>
+
+            <p>
+                Mentoring developers, reviewing code and driving
+                projects toward successful delivery.
+            </p>
+
+        </div>
+
 
     </div>
 
@@ -290,105 +433,138 @@
 
 </section>
 
-<!-- ================= SERVICES ================= -->
+<!-- =====================================================
+     EXPERTISE
+===================================================== -->
 
-<section id="services" class="section dark-section">
+<section id="expertise" class="section expertise">
 
 ```
 <div class="container">
 
-    <div class="section-heading">
 
-        <p class="eyebrow">WHAT I DO</p>
+    <div class="section-label light">
 
-        <h2>
-            Technical
-            <span>expertise.</span>
-        </h2>
+        <span>02</span>
+
+        EXPERTISE
 
     </div>
 
 
-    <div class="services-grid">
+    <div class="section-title-light">
 
-        <article class="service-card">
+        <h2>
+            What I
+            <span>specialize in.</span>
+        </h2>
 
-            <div class="service-number">01</div>
+        <p>
+            From enterprise WordPress platforms to modern
+            headless applications.
+        </p>
+
+    </div>
+
+
+    <div class="expertise-grid">
+
+
+        <article class="expertise-card">
+
+            <div class="card-number">01</div>
+
+            <div class="icon">WP</div>
 
             <h3>WordPress Development</h3>
 
             <p>
-                Custom WordPress architecture, plugins, themes,
-                Gutenberg/Builder modules, APIs and enterprise
-                implementations.
+                Enterprise WordPress architecture, custom plugins,
+                custom modules, CPT, ACF Pro and REST API solutions.
             </p>
 
-            <div class="tags">
+
+            <div class="mini-tags">
+
                 <span>WordPress</span>
                 <span>PHP</span>
-                <span>ACF</span>
-                <span>REST API</span>
+                <span>ACF Pro</span>
+
             </div>
 
         </article>
 
 
-        <article class="service-card">
+        <article class="expertise-card">
 
-            <div class="service-number">02</div>
+            <div class="card-number">02</div>
+
+            <div class="icon">WC</div>
 
             <h3>WooCommerce</h3>
 
             <p>
-                Custom storefronts, checkout solutions,
-                reward systems, subscriptions, integrations
-                and e-commerce functionality.
+                Custom storefronts, reward systems, subscriptions,
+                membership integrations and e-commerce APIs.
             </p>
 
-            <div class="tags">
+
+            <div class="mini-tags">
+
                 <span>WooCommerce</span>
                 <span>Subscriptions</span>
-                <span>APIs</span>
+                <span>REST API</span>
+
             </div>
 
         </article>
 
 
-        <article class="service-card">
+        <article class="expertise-card">
 
-            <div class="service-number">03</div>
+            <div class="card-number">03</div>
+
+            <div class="icon">HC</div>
 
             <h3>Headless CMS</h3>
 
             <p>
-                Modern content architectures using Contentful,
+                Modern headless platforms using Contentful,
                 Next.js, React and reusable localized components.
             </p>
 
-            <div class="tags">
+
+            <div class="mini-tags">
+
                 <span>Contentful</span>
                 <span>Next.js</span>
                 <span>React</span>
+
             </div>
 
         </article>
 
 
-        <article class="service-card">
+        <article class="expertise-card">
 
-            <div class="service-number">04</div>
+            <div class="card-number">04</div>
+
+            <div class="icon">FS</div>
 
             <h3>Full-Stack Development</h3>
 
             <p>
-                End-to-end application development using
-                MERN, PHP frameworks, databases and REST APIs.
+                End-to-end application development using MERN,
+                PHP frameworks, databases and APIs.
             </p>
 
-            <div class="tags">
-                <span>React</span>
-                <span>Node.js</span>
-                <span>MongoDB</span>
+
+            <div class="mini-tags">
+
+                <span>MERN</span>
+                <span>Laravel</span>
+                <span>CodeIgniter</span>
+
             </div>
 
         </article>
@@ -400,211 +576,301 @@
 
 </section>
 
-<!-- ================= PROJECTS ================= -->
+<!-- =====================================================
+     PROJECTS
+===================================================== -->
 
-<section id="projects" class="section">
+<section id="projects" class="section projects">
 
 ```
 <div class="container">
 
-    <div class="section-heading">
 
-        <p class="eyebrow">SELECTED WORK</p>
+    <div class="section-label">
+
+        <span>03</span>
+
+        SELECTED PROJECTS
+
+    </div>
+
+
+    <div class="section-title">
 
         <h2>
-            Projects I've
-            <span>worked on.</span>
+            Work that
+            <span>solved real problems.</span>
         </h2>
+
+        <p>
+            A selection of enterprise, e-commerce and
+            full-stack solutions.
+        </p>
 
     </div>
 
 
     <div class="projects-grid">
 
-        <article class="project-card featured">
+
+        <!-- PROJECT 01 -->
+
+        <article class="project project-featured">
 
             <div class="project-top">
 
-                <span class="project-type">
-                    ENTERPRISE MIGRATION
-                </span>
+                <span>01 / ENTERPRISE MIGRATION</span>
 
-                <span class="project-index">01</span>
+                <span class="arrow">↗</span>
 
             </div>
 
-            <h3>
-                Sitecore → WordPress Migration
-            </h3>
 
-            <p>
-                Led migration of a corporate platform from Sitecore
-                (.NET Framework) to WordPress while preserving
-                content, structure and functionality.
-            </p>
+            <div class="project-content">
 
-            <div class="project-tech">
-                <span>WordPress</span>
-                <span>PHP</span>
-                <span>Azure</span>
-                <span>Migration</span>
+                <p class="project-category">
+                    SITECORE → WORDPRESS
+                </p>
+
+                <h3>
+                    Enterprise Website Migration
+                </h3>
+
+                <p>
+                    Led the migration of a corporate website from
+                    Sitecore (.NET Framework) to WordPress while
+                    preserving content, structure and functionality.
+                </p>
+
+                <div class="project-tags">
+
+                    <span>WordPress</span>
+                    <span>PHP</span>
+                    <span>Azure</span>
+                    <span>CI/CD</span>
+
+                </div>
+
             </div>
 
         </article>
 
 
-        <article class="project-card">
+
+        <!-- PROJECT 02 -->
+
+        <article class="project">
 
             <div class="project-top">
 
-                <span class="project-type">
-                    WORDPRESS
-                </span>
+                <span>02 / WORDPRESS</span>
 
-                <span class="project-index">02</span>
+                <span class="arrow">↗</span>
 
             </div>
 
-            <h3>
-                Multilingual WordPress Platform
-            </h3>
 
-            <p>
-                Architected a multilingual WordPress platform
-                using custom plugins and reusable page-builder
-                modules.
-            </p>
+            <div class="project-content">
 
-            <div class="project-tech">
-                <span>WordPress</span>
-                <span>PHP</span>
-                <span>Custom Plugins</span>
+                <p class="project-category">
+                    MULTILINGUAL PLATFORM
+                </p>
+
+                <h3>
+                    Multilingual WordPress Platform
+                </h3>
+
+                <p>
+                    Architected a multilingual WordPress platform
+                    using custom plugins and custom Beaver Builder
+                    modules for localized content management.
+                </p>
+
+                <div class="project-tags">
+
+                    <span>WordPress</span>
+                    <span>PHP</span>
+                    <span>Beaver Builder</span>
+
+                </div>
+
             </div>
 
         </article>
 
 
-        <article class="project-card">
+
+        <!-- PROJECT 03 -->
+
+        <article class="project">
 
             <div class="project-top">
 
-                <span class="project-type">
-                    HEADLESS CMS
-                </span>
+                <span>03 / HEADLESS</span>
 
-                <span class="project-index">03</span>
+                <span class="arrow">↗</span>
 
             </div>
 
-            <h3>
-                Contentful + Next.js Platform
-            </h3>
 
-            <p>
-                Delivered a multilingual headless website using
-                Contentful with reusable Next.js components
-                and localized content models.
-            </p>
+            <div class="project-content">
 
-            <div class="project-tech">
-                <span>Contentful</span>
-                <span>Next.js</span>
-                <span>React</span>
+                <p class="project-category">
+                    CONTENTFUL + NEXT.JS
+                </p>
+
+                <h3>
+                    Global Headless Website
+                </h3>
+
+                <p>
+                    Delivered a multilingual Contentful and
+                    Next.js website with reusable components
+                    and localized content models.
+                </p>
+
+                <div class="project-tags">
+
+                    <span>Contentful</span>
+                    <span>Next.js</span>
+                    <span>React</span>
+
+                </div>
+
             </div>
 
         </article>
 
 
-        <article class="project-card">
+
+        <!-- PROJECT 04 -->
+
+        <article class="project">
 
             <div class="project-top">
 
-                <span class="project-type">
-                    MERN
-                </span>
+                <span>04 / MERN</span>
 
-                <span class="project-index">04</span>
+                <span class="arrow">↗</span>
 
             </div>
 
-            <h3>
-                Hospital Billing Management System
-            </h3>
 
-            <p>
-                Engineered a full-stack hospital billing management
-                application using the MERN stack.
-            </p>
+            <div class="project-content">
 
-            <div class="project-tech">
-                <span>MongoDB</span>
-                <span>Express</span>
-                <span>React</span>
-                <span>Node</span>
+                <p class="project-category">
+                    HEALTHCARE
+                </p>
+
+                <h3>
+                    Hospital Billing Management System
+                </h3>
+
+                <p>
+                    Engineered a full-stack hospital billing
+                    management system covering front-end UI
+                    and back-end billing logic.
+                </p>
+
+                <div class="project-tags">
+
+                    <span>MongoDB</span>
+                    <span>Express</span>
+                    <span>React</span>
+                    <span>Node.js</span>
+
+                </div>
+
             </div>
 
         </article>
 
 
-        <article class="project-card">
+
+        <!-- PROJECT 05 -->
+
+        <article class="project">
 
             <div class="project-top">
 
-                <span class="project-type">
-                    E-COMMERCE
-                </span>
+                <span>05 / E-COMMERCE</span>
 
-                <span class="project-index">05</span>
+                <span class="arrow">↗</span>
 
             </div>
 
-            <h3>
-                WooCommerce Reward System
-            </h3>
 
-            <p>
-                Developed custom WooCommerce reward and loyalty
-                functionality supporting subscriptions and
-                membership-based experiences.
-            </p>
+            <div class="project-content">
 
-            <div class="project-tech">
-                <span>WooCommerce</span>
-                <span>PHP</span>
-                <span>Memberships</span>
+                <p class="project-category">
+                    WOOCOMMERCE
+                </p>
+
+                <h3>
+                    Custom Reward System
+                </h3>
+
+                <p>
+                    Designed and built a custom WooCommerce reward
+                    system and integrated Membership Pro with
+                    WooCommerce for loyalty and subscription models.
+                </p>
+
+                <div class="project-tags">
+
+                    <span>WooCommerce</span>
+                    <span>PHP</span>
+                    <span>Membership</span>
+
+                </div>
+
             </div>
 
         </article>
 
 
-        <article class="project-card">
+
+        <!-- PROJECT 06 -->
+
+        <article class="project">
 
             <div class="project-top">
 
-                <span class="project-type">
-                    PLUGINS
-                </span>
+                <span>06 / PLUGINS</span>
 
-                <span class="project-index">06</span>
+                <span class="arrow">↗</span>
 
             </div>
 
-            <h3>
-                Custom WordPress Plugins
-            </h3>
 
-            <p>
-                Built custom Store Locator, Beaver Builder and
-                Elementor extensions with CPT and ACF Pro.
-            </p>
+            <div class="project-content">
 
-            <div class="project-tech">
-                <span>WordPress</span>
-                <span>ACF Pro</span>
-                <span>JavaScript</span>
+                <p class="project-category">
+                    CUSTOM WORDPRESS
+                </p>
+
+                <h3>
+                    Custom Plugin Ecosystem
+                </h3>
+
+                <p>
+                    Developed custom WordPress solutions including
+                    Store Locator, Beaver Builder extensions and
+                    Elementor extensions using CPT and ACF Pro.
+                </p>
+
+                <div class="project-tags">
+
+                    <span>WordPress</span>
+                    <span>ACF Pro</span>
+                    <span>JavaScript</span>
+
+                </div>
+
             </div>
 
         </article>
+
 
     </div>
 
@@ -613,135 +879,30 @@
 
 </section>
 
-<!-- ================= SKILLS ================= -->
+<!-- =====================================================
+     EXPERIENCE
+===================================================== -->
 
-<section id="skills" class="section skills-section">
-
-```
-<div class="container">
-
-    <div class="section-heading">
-
-        <p class="eyebrow">TECHNICAL STACK</p>
-
-        <h2>
-            Tools I use to
-            <span>build.</span>
-        </h2>
-
-    </div>
-
-
-    <div class="skills-layout">
-
-        <div class="skill-group">
-
-            <h3>Backend</h3>
-
-            <div class="skill-list">
-                <span>PHP</span>
-                <span>Laravel</span>
-                <span>CodeIgniter</span>
-                <span>Node.js</span>
-                <span>REST APIs</span>
-            </div>
-
-        </div>
-
-
-        <div class="skill-group">
-
-            <h3>Frontend</h3>
-
-            <div class="skill-list">
-                <span>JavaScript</span>
-                <span>React</span>
-                <span>Next.js</span>
-                <span>HTML5</span>
-                <span>CSS3</span>
-                <span>jQuery</span>
-            </div>
-
-        </div>
-
-
-        <div class="skill-group">
-
-            <h3>CMS & E-Commerce</h3>
-
-            <div class="skill-list">
-                <span>WordPress</span>
-                <span>WooCommerce</span>
-                <span>Contentful</span>
-                <span>ACF Pro</span>
-            </div>
-
-        </div>
-
-
-        <div class="skill-group">
-
-            <h3>Databases</h3>
-
-            <div class="skill-list">
-                <span>MySQL</span>
-                <span>SQL Server</span>
-                <span>MongoDB</span>
-            </div>
-
-        </div>
-
-
-        <div class="skill-group">
-
-            <h3>Cloud & DevOps</h3>
-
-            <div class="skill-list">
-                <span>Azure</span>
-                <span>Git</span>
-                <span>GitLab</span>
-                <span>Bitbucket</span>
-                <span>CI/CD</span>
-            </div>
-
-        </div>
-
-
-        <div class="skill-group">
-
-            <h3>Infrastructure</h3>
-
-            <div class="skill-list">
-                <span>Apache</span>
-                <span>Nginx</span>
-                <span>Ubuntu</span>
-                <span>Hosting</span>
-                <span>DNS</span>
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-```
-
-</section>
-
-<!-- ================= EXPERIENCE ================= -->
-
-<section id="experience" class="section">
+<section id="experience" class="section experience">
 
 ```
 <div class="container">
 
-    <div class="section-heading">
 
-        <p class="eyebrow">CAREER</p>
+    <div class="section-label">
+
+        <span>04</span>
+
+        EXPERIENCE
+
+    </div>
+
+
+    <div class="section-title">
 
         <h2>
-            Professional
-            <span>experience.</span>
+            A career built around
+            <span>delivery.</span>
         </h2>
 
     </div>
@@ -750,138 +911,211 @@
     <div class="timeline">
 
 
-        <div class="timeline-item">
+        <!-- CURRENT -->
+
+        <article class="timeline-item">
+
+            <div class="timeline-marker">
+
+                <span></span>
+
+            </div>
+
 
             <div class="timeline-date">
-                JUL 2024 — PRESENT
+
+                <span>JUL 2024 — PRESENT</span>
+
             </div>
+
 
             <div class="timeline-content">
 
                 <h3>Senior Technical Analyst</h3>
 
-                <h4>Softweb Solutions Inc. — An Avenet Company</h4>
+                <h4>
+                    Softweb Solutions Inc.
+                    <small>(An Avenet Company)</small>
+                </h4>
+
 
                 <ul>
+
                     <li>
-                        Led enterprise Sitecore to WordPress migration
-                        projects.
+                        Led Sitecore (.NET Framework) to WordPress
+                        migration for a corporate website.
                     </li>
 
                     <li>
                         Architected multilingual WordPress platforms
-                        with custom plugins and builder modules.
+                        using custom plugins and Beaver Builder modules.
                     </li>
 
                     <li>
-                        Delivered Contentful + Next.js headless
-                        solutions.
+                        Delivered multilingual Contentful + Next.js
+                        solutions using reusable components and
+                        localized content models.
                     </li>
 
                     <li>
-                        Engineered MERN-based hospital billing
-                        management systems.
+                        Engineered a MERN-based Hospital Billing
+                        Management System.
                     </li>
 
                     <li>
-                        Led a team of developers through task
-                        assignment, code reviews and feedback.
+                        Built automated test suites using Jest.
                     </li>
 
                     <li>
-                        Worked directly with clients on maintenance,
-                        server management and technical solutions.
+                        Lead a team of 3 developers, managing task
+                        assignment, code review and performance feedback.
+                    </li>
+
+                    <li>
+                        Own client-facing WordPress maintenance,
+                        server maintenance and code updates.
+                    </li>
+
+                    <li>
+                        Implemented WordPress authentication integrating
+                        .NET REST API login with Azure AD / Microsoft
+                        Entra ID SSO.
                     </li>
 
                 </ul>
 
             </div>
 
-        </div>
+        </article>
 
 
-        <div class="timeline-item">
+
+        <!-- PREVIOUS -->
+
+        <article class="timeline-item">
+
+            <div class="timeline-marker">
+
+                <span></span>
+
+            </div>
+
 
             <div class="timeline-date">
-                DEC 2015 — JUL 2024
+
+                <span>DEC 2015 — JUL 2024</span>
+
             </div>
+
 
             <div class="timeline-content">
 
                 <h3>Senior WordPress Developer</h3>
 
-                <h4>Mavelers — Brands of Uplers Pvt. Ltd.</h4>
+                <h4>
+                    Mavelers
+                    <small>(Brands of Uplers Pvt. Ltd.)</small>
+                </h4>
+
 
                 <ul>
 
                     <li>
-                        Developed and maintained WordPress
-                        production websites for multiple clients.
+                        Directed WordPress website production,
+                        coding, deployment and optimization across
+                        multiple client projects.
                     </li>
 
                     <li>
                         Customized WooCommerce storefronts and
-                        e-commerce functionality.
+                        developed REST API integrations.
                     </li>
 
                     <li>
-                        Integrated third-party APIs including
+                        Integrated third-party platforms including
                         JobAdder, MailChimp, Salesforce and HomHero.
                     </li>
 
                     <li>
-                        Developed custom WordPress plugins and
-                        builder extensions.
+                        Delivered a headless CMS project using React.
                     </li>
 
                     <li>
-                        Worked on React/headless CMS implementations.
+                        Managed performance optimization, domains,
+                        DNS, hosting and deployments.
                     </li>
 
                     <li>
-                        Managed performance optimization,
-                        hosting, DNS and deployments.
+                        Built a custom WooCommerce Reward System.
+                    </li>
+
+                    <li>
+                        Developed custom Store Locator, Beaver Builder
+                        and Elementor extensions using CPT and ACF Pro.
+                    </li>
+
+                    <li>
+                        Contributed to a Laravel-based API service,
+                        developing modules and REST API endpoints.
                     </li>
 
                 </ul>
 
             </div>
 
-        </div>
+        </article>
 
 
-        <div class="timeline-item">
+
+        <!-- FIRST -->
+
+        <article class="timeline-item">
+
+            <div class="timeline-marker">
+
+                <span></span>
+
+            </div>
+
 
             <div class="timeline-date">
-                MAR 2015 — NOV 2015
+
+                <span>MAR 2015 — NOV 2015</span>
+
             </div>
+
 
             <div class="timeline-content">
 
                 <h3>PHP Developer</h3>
 
-                <h4>Aldiablos Infotech Pvt. Ltd.</h4>
+                <h4>
+                    Aldiablos Infotech Pvt. Ltd.
+                </h4>
+
 
                 <ul>
 
                     <li>
-                        Developed CodeIgniter-based web applications.
+                        Developed and maintained web applications
+                        using the CodeIgniter PHP framework.
                     </li>
 
                     <li>
-                        Built barcode tracking systems.
+                        Built a barcode tracking system.
                     </li>
 
                     <li>
-                        Implemented PDF generation using htmltopdf
-                        and mPDF.
+                        Implemented PDF report generation using
+                        htmltopdf and mPDF.
                     </li>
 
                 </ul>
 
             </div>
 
-        </div>
+        </article>
+
 
     </div>
 
@@ -890,20 +1124,216 @@
 
 </section>
 
-<!-- ================= ACHIEVEMENTS ================= -->
+<!-- =====================================================
+     SKILLS
+===================================================== -->
 
-<section class="section dark-section">
+<section id="skills" class="section skills">
 
 ```
 <div class="container">
 
-    <div class="section-heading">
 
-        <p class="eyebrow">RECOGNITION</p>
+    <div class="section-label">
+
+        <span>05</span>
+
+        TECHNICAL STACK
+
+    </div>
+
+
+    <div class="section-title">
 
         <h2>
-            Achievements &
-            <span>awards.</span>
+            Technologies I
+            <span>work with.</span>
+        </h2>
+
+    </div>
+
+
+    <div class="skills-grid">
+
+
+        <div class="skill-category">
+
+            <span class="skill-index">01</span>
+
+            <h3>Languages</h3>
+
+            <div class="skill-tags">
+
+                <span>PHP</span>
+                <span>JavaScript</span>
+                <span>jQuery</span>
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>AJAX</span>
+                <span>Python</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="skill-category">
+
+            <span class="skill-index">02</span>
+
+            <h3>Full-Stack</h3>
+
+            <div class="skill-tags">
+
+                <span>MongoDB</span>
+                <span>Express.js</span>
+                <span>React</span>
+                <span>Node.js</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="skill-category">
+
+            <span class="skill-index">03</span>
+
+            <h3>CMS & E-Commerce</h3>
+
+            <div class="skill-tags">
+
+                <span>WordPress</span>
+                <span>WooCommerce</span>
+                <span>Contentful</span>
+                <span>ACF Pro</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="skill-category">
+
+            <span class="skill-index">04</span>
+
+            <h3>Frameworks</h3>
+
+            <div class="skill-tags">
+
+                <span>Laravel</span>
+                <span>CodeIgniter</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="skill-category">
+
+            <span class="skill-index">05</span>
+
+            <h3>Cloud & Hosting</h3>
+
+            <div class="skill-tags">
+
+                <span>Azure</span>
+                <span>Flywheel</span>
+                <span>GoDaddy</span>
+                <span>Pantheon</span>
+                <span>WP Engine</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="skill-category">
+
+            <span class="skill-index">06</span>
+
+            <h3>Databases</h3>
+
+            <div class="skill-tags">
+
+                <span>MySQL</span>
+                <span>SQL Server</span>
+                <span>MongoDB</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="skill-category">
+
+            <span class="skill-index">07</span>
+
+            <h3>Infrastructure</h3>
+
+            <div class="skill-tags">
+
+                <span>Apache</span>
+                <span>Nginx</span>
+                <span>Ubuntu</span>
+                <span>Windows</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="skill-category">
+
+            <span class="skill-index">08</span>
+
+            <h3>Tools</h3>
+
+            <div class="skill-tags">
+
+                <span>Git</span>
+                <span>GitLab</span>
+                <span>Bitbucket</span>
+                <span>JIRA</span>
+                <span>Basecamp</span>
+                <span>SourceTree</span>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================================
+     AWARDS
+===================================================== -->
+
+<section class="section awards">
+
+```
+<div class="container">
+
+
+    <div class="section-label light">
+
+        <span>06</span>
+
+        RECOGNITION
+
+    </div>
+
+
+    <div class="section-title-light">
+
+        <h2>
+            Recognition for
+            <span>great work.</span>
         </h2>
 
     </div>
@@ -911,32 +1341,60 @@
 
     <div class="awards-grid">
 
-        <div class="award-card">
 
-            <span class="award-number">01</span>
+        <div class="award">
 
-            <h3>Star Performer Award</h3>
+            <div class="award-number">
+                01
+            </div>
 
-            <p>
-                Recognized for client trust, reliability and
-                consistent technical contribution.
-            </p>
+            <div>
+
+                <p class="award-label">
+                    MAVELERS
+                </p>
+
+                <h3>
+                    Star Performer Award
+                </h3>
+
+                <p>
+                    Recognized for consistently earning client
+                    trust and demonstrating reliability in
+                    project delivery.
+                </p>
+
+            </div>
 
         </div>
 
 
-        <div class="award-card">
+        <div class="award">
 
-            <span class="award-number">02</span>
+            <div class="award-number">
+                02
+            </div>
 
-            <h3>Project of the Month</h3>
+            <div>
 
-            <p>
-                Recognized for expedited project delivery while
-                maintaining quality standards.
-            </p>
+                <p class="award-label">
+                    MAVELERS
+                </p>
+
+                <h3>
+                    Project of the Month
+                </h3>
+
+                <p>
+                    Recognized for expediting delivery on a
+                    client project while maintaining quality
+                    standards.
+                </p>
+
+            </div>
 
         </div>
+
 
     </div>
 
@@ -945,71 +1403,112 @@
 
 </section>
 
-<!-- ================= CONTACT ================= -->
+<!-- =====================================================
+     CONTACT
+===================================================== -->
 
-<section id="contact" class="contact-section">
+<section id="contact" class="contact">
 
 ```
-<div class="container contact-container">
+<div class="container contact-inner">
 
-    <p class="eyebrow">GET IN TOUCH</p>
+
+    <p class="contact-label">
+        HAVE A PROJECT IN MIND?
+    </p>
+
 
     <h2>
         Let's build something
         <span>great.</span>
     </h2>
 
-    <p class="contact-text">
-        I'm always interested in discussing interesting projects,
+
+    <p class="contact-description">
+        I'm open to discussing interesting projects,
         technical challenges and new opportunities.
     </p>
 
 
-    <div class="contact-buttons">
+    <div class="contact-actions">
 
         <a href="mailto:pratsdang777@gmail.com"
-           class="button primary">
+           class="btn btn-white">
+
             Email Me
+
+            <span>↗</span>
+
         </a>
+
+
+        <!-- Replace with your actual LinkedIn URL -->
 
         <a href="https://www.linkedin.com/"
            target="_blank"
-           class="button secondary">
+           rel="noopener"
+           class="contact-link">
+
             LinkedIn
+
+            <span>↗</span>
+
         </a>
+
+
+        <!-- Replace with your actual GitHub URL -->
 
         <a href="https://github.com/"
            target="_blank"
-           class="button secondary">
+           rel="noopener"
+           class="contact-link">
+
             GitHub
+
+            <span>↗</span>
+
         </a>
 
     </div>
 
 
-    <p class="email">
+    <a href="mailto:pratsdang777@gmail.com"
+       class="contact-email">
+
         pratsdang777@gmail.com
-    </p>
+
+    </a>
 
 </div>
 ```
 
 </section>
 
-<!-- ================= FOOTER ================= -->
+</main>
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
 
 <footer>
 
 ```
-<div class="container footer-content">
+<div class="container footer">
 
-    <div>
-        <strong>PRATIK DANGI</strong>
-        <p>Senior Full-Stack Developer</p>
+    <div class="footer-brand">
+
+        <span>PD</span><b>.</b>
+
     </div>
 
+
     <p>
-        © 2026 Pratik Dangi. Built with HTML & CSS.
+        © 2026 Pratik Dangi. All rights reserved.
+    </p>
+
+
+    <p>
+        Senior Full-Stack Developer
     </p>
 
 </div>
